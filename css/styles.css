@@ -1,0 +1,304 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --tertiary-text-color: #2196f3;
+  --quaternary-text-color: #ffffff;
+  --title-text-color: #757575;
+  --main-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --section-backgrond-color: #f5f4fa;
+  --accent-color: #000000;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --accent-button-color: #2196f3;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--main-background-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: 1px dashed black;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+
+/*------------------------------------- HEADER---------------------------------------------------- */
+.header {
+  background-color: var(--main-background-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-nav .link.current {
+  color: var(--tertiary-text-color);
+}
+.logo-header {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.logo-word {
+  color: var(--tertiary-text-color);
+  font-family: raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.header-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.header-link:hover,
+.header-link:focus,
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--tertiary-text-color);
+}
+
+/* -------------------------------------------HERO-------------------------------- */
+.hero {
+  background-color: var(--secondary-background-color);
+  padding: 200px 452px;
+}
+.hero-title {
+  color: var(--quaternary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 696px;
+  margin-bottom: 30px;
+}
+.hero-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-button-color);
+  color: var(--quaternary-text-color);
+}
+
+/*--------------------------FEATURES-----------------------------*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.feature-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.feature-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/* ------------------------------ABOUT--------------------- */
+.about {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  padding-bottom: 94px;
+}
+.about-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin-bottom: 50px;
+}
+/*-----------------------------TEAM--------------------------*/
+.team {
+  background-color: var(--section-backgrond-color);
+}
+.card {
+  max-width: 270px;
+}
+.team-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--secondary-text-color);
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+.team-list {
+  padding-bottom: 94px;
+}
+.team-item {
+  background-color: var(--main-background-color);
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+.team-job {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+/* ---------------------FOOTER---------------------------- */
+.footer {
+  background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--quaternary-text-color);
+}
+
+.address-location {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--section-backgrond-color);
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.address-mail-item {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footer-text-color);
+  margin-bottom: 9px;
+}
+
+.address-item {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--footer-text-color);
+}
+
+.address-location:hover,
+.address-location:focus,
+.address-item:hover,
+.address-item:focus,
+.address-mail-item:hover,
+.address-mail-item:focus {
+  color: var(--accent-button-color);
+}
+
+/*portfolio.html*/
+
+.works {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.works-type {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
+}
+.section-works-button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+.section-works-button:hover,
+.section-works-button:focus {
+  background-color: var(--tertiary-text-color);
+  color: var(--main-background-color);
+}
