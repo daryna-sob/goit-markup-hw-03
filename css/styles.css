@@ -107,8 +107,17 @@ img {
   color: var(--secondary-text-color);
 }
 
-.header-content {
+.connect {
+  margin-left: 331px;
+}
+
+.connect-list {
   display: flex;
+  align-items: center;
+}
+
+.connect-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-contact {
@@ -129,29 +138,30 @@ img {
 /* -------------------------------------------HERO-------------------------------- */
 .hero {
   background-color: var(--secondary-background-color);
-  padding: 200px 452px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
+
 .hero-title {
   color: var(--quaternary-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  max-width: 696px;
-  margin-bottom: 30px;
 }
+
 .hero-button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  margin-top: 30px;
 }
 .hero-button:hover,
 .hero-button:focus {
