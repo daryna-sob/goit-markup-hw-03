@@ -382,7 +382,6 @@ img {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
 }
 
 .work-item:nth-child(3n) {
@@ -395,7 +394,7 @@ img {
 .work-description {
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left: 24px;
+  border: 1px solid #eeeeee;
 }
 
 .works {
@@ -403,10 +402,12 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+  margin-left: 24px;
 }
 .works-type {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
   margin-top: 4px;
+  margin-left: 24px;
 }
